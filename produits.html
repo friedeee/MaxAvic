@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos produits - Max Avic | Cailles, œufs et cages d'élevage</title>
+    <meta name="description" content="Achetez des cailles fermières, des œufs de caille riches en vitamines, et des cages d'élevage professionnelles au Bénin. Livraison et conseils disponibles.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- ================= HEADER / MENU ================= -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🥚 Max Avic</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="produits.html" class="active">Nos produits</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= SECTION PRODUITS ================= -->
+    <section class="products-section">
+        <div class="container">
+
+            <h2>Nos Produits & Équipements</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 40px;">
+                Découvrez notre gamme complète : viande, œufs, et tout le matériel pour élever vos propres cailles.
+            </p>
+
+            <div class="product-grid">
+                <!-- Produit 1 : Viande de Caille -->
+                <div class="product-card">
+                    <div class="product-icon">🍗</div>
+                    <h3>Viande de Caille</h3>
+                    <p class="product-label">Fermière & Tendre</p>
+                    <p>Une chair fine, délicate et très prisée en gastronomie. Riche en protéines et faible en gras. Idéale pour les repas de fête ou les régimes santé.</p>
+                    <p class="price">📞 Prix sur devis (à la pièce ou en lot)</p>
+                    <a href="contact.html" class="btn-small">Commander</a>
+                </div>
+
+                <!-- Produit 2 : Œufs de Caille -->
+                <div class="product-card">
+                    <div class="product-icon">🥚</div>
+                    <h3>Œufs de Caille</h3>
+                    <p class="product-label">Super-aliment</p>
+                    <p>Petits mais extrêmement nutritifs ! Riches en vitamines A, B12 et en fer. Parfaits pour les enfants, les sportifs, ou en entrée apéritive.</p>
+                    <p class="price">📦 Vente en vrac ou par plateau</p>
+                    <a href="contact.html" class="btn-small">Commander</a>
+                </div>
+
+                <!-- Produit 3 : Cages & Accessoires -->
+                <div class="product-card">
+                    <div class="product-icon">🏠</div>
+                    <h3>Cages & Kits d'élevage</h3>
+                    <p class="product-label">Matériel professionnel</p>
+                    <p>Des cages en métal galvanisé, robustes et empilables. Équipées de mangeoires, abreuvoirs automatiques et bacs à fientes. Plusieurs tailles disponibles (de 20 à 100 cailles).</p>
+                    <p class="price">🔧 Sur devis (livraison possible)</p>
+                    <a href="contact.html" class="btn-small">Demander un devis</a>
+                </div>
+            </div>
+
+            <!-- Message rassurant -->
+            <div style="text-align: center; margin-top: 50px; background: #FDF3E7; padding: 20px; border-radius: 15px;">
+                <p style="font-size: 1.1rem; margin: 0;">
+                    <i class="fas fa-truck" style="color: #2E7D32; margin-right: 10px;"></i>
+                    <strong>Livraison possible</strong> sur [Cotonou / Parakou / Porto-Novo].
+                    <br>
+                    <i class="fas fa-handshake" style="color: #2E7D32; margin-right: 10px;"></i>
+                    <strong>Conseils personnalisés</strong> pour bien démarrer votre élevage de cailles.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= PIED DE PAGE ================= -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Max Avic - Tous droits réservés.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= JS MENU MOBILE ================= -->
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+</body>
+</html>

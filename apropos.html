@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Max Avic | Élevage de cailles et cages</title>
+    <meta name="description" content="Découvrez Max Avic, spécialiste de l'élevage de cailles au Bénin. Passionné et professionnel, il propose des produits de qualité et des équipements durables.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- ================= HEADER / MENU ================= -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🥚 Max Avic</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="apropos.html" class="active">À propos</a></li>
+                    <li><a href="produits.html">Nos produits</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= SECTION À PROPOS ================= -->
+    <section class="about-section">
+        <div class="container">
+            <h2>Qui sommes-nous ?</h2>
+            <p>
+                <strong>Max Avic</strong> est une ferme spécialisée dans l'élevage de cailles, basée au Bénin. 
+                Passionné par l'aviculture, Max a décidé de se concentrer sur cet oiseau aux multiples vertus, 
+                encore méconnu du grand public dans notre région.
+            </p>
+            <p>
+                Notre métier repose sur deux piliers : 
+                <strong>l'élevage de cailles de chair et pondeuses</strong>, 
+                et la <strong>fabrication et vente de cages d'élevage</strong>. 
+                Que vous soyez un particulier souhaitant découvrir la caille en cuisine, 
+                ou un entrepreneur voulant se lancer dans l'aviculture, nous avons les produits et les conseils qu'il vous faut.
+            </p>
+            <p>
+                Nous mettons un point d'honneur à utiliser des aliments sains, à maintenir des cages propres, 
+                et à garantir le bien-être de nos animaux. Nos équipements sont conçus pour être durables, 
+                faciles à nettoyer, et adaptés au climat béninois.
+            </p>
+            <blockquote>
+                <em>"Chez Max Avic, l'avenir de l'aviculture passe par la caille et des équipements de qualité."</em>
+            </blockquote>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="produits.html" class="btn-primary">Découvrir nos produits</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PIED DE PAGE ================= -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Max Avic - Tous droits réservés.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= JS MENU MOBILE ================= -->
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+</body>
+</html>

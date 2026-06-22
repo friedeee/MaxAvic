@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Avic - Spécialiste de l'élevage de cailles au Bénin</title>
+    <meta name="description" content="Max Avic : élevage de cailles, vente d'œufs de caille, de viande de caille et de cages d'élevage professionnelles au Bénin. Qualité et conseils.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- ================= HEADER / MENU ================= -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🥚 Max Avic</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="produits.html">Nos produits</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= SECTION HERO ================= -->
+    <section class="hero">
+        <div class="hero-content container">
+            <h2>Max Avic, <br>le spécialiste de la caille au Bénin</h2>
+            <p>Découvrez des cailles fermières de qualité, leurs œufs nutritifs, ainsi que des cages et équipements professionnels pour démarrer votre propre élevage.</p>
+            <a href="produits.html" class="btn-primary">Découvrir nos produits</a>
+        </div>
+    </section>
+
+    <!-- ================= SECTION AVANTAGES ================= -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Alimentation 100% naturelle</h3>
+                    <p>Nos cailles sont nourries exclusivement avec des graines sélectionnées et des compléments sains pour une chair et des œufs de qualité.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-home"></i>
+                    <h3>Vente de cages & équipements</h3>
+                    <p>Nous fournissons des cages robustes, des abreuvoirs et des mangeoires adaptés à l'élevage des cailles, pour les petits et grands élevages.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>De la ferme à votre table</h3>
+                    <p>Cailles prêtes à cuisiner, œufs frais, ou kits d'élevage. Tout est disponible directement chez Max Avic, sans intermédiaire.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PIED DE PAGE ================= -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Max Avic - Tous droits réservés.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= JS MENU MOBILE ================= -->
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+</body>
+</html>
