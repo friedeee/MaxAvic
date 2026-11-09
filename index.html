@@ -3,88 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max Avic - Spécialiste de l'élevage de cailles au Bénin</title>
-    <meta name="description" content="Max Avic : élevage de cailles, vente d'œufs de caille, de viande de caille et de cages d'élevage professionnelles au Bénin. Qualité et conseils.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Max Avic · Cailles, œufs de caille et cages d'élevage au Bénin</title>
+    <meta name="description" content="Max Avic : élevage de cailles au Bénin. Œufs de caille frais, viande de caille et cages d'élevage professionnelles. Commande simple sur WhatsApp.">
+    <meta name="theme-color" content="#123822">
+    <meta property="og:title" content="Max Avic · Cailles, œufs de caille et cages d'élevage au Bénin">
+    <meta property="og:description" content="Max Avic : élevage de cailles au Bénin. Œufs de caille frais, viande de caille et cages d'élevage professionnelles. Commande simple sur WhatsApp.">
+    <meta property="og:image" content="images/photos/caille-japon.jpg">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-    <!-- ================= HEADER / MENU ================= -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>🥚 Max Avic</h1>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Accueil</a></li>
-                    <li><a href="apropos.html">À propos</a></li>
-                    <li><a href="produits.html">Nos produits</a></li>
-                    <li><a href="galerie.html">Galerie</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <!-- ================= EN-TÊTE ================= -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html" aria-label="Max Avic, accueil"><svg viewBox="0 0 100 100" aria-hidden="true"><ellipse cx="50" cy="52" rx="38" ry="46" fill="#1f6b3a"/><g transform="translate(14 14) scale(.72)"><path d="M25 63 L11 55 L14 66 Z" fill="#fbf6ec"/><path d="M20 62 C20 45 35 35 54 36 C59 31 63 26 69 25 C79 24 85 31 84 39 C83 46 79 50 78 56 C77 71 64 80 47 80 C32 80 20 73 20 62 Z" fill="#fbf6ec"/><path d="M67 29 C65 17 69 11 75 11 C72 15 71 20 74 29 Z" fill="#fbf6ec"/><path d="M84 35 L92 38 L83 41 Z" fill="#e67e22"/><circle cx="76" cy="33" r="2.6" fill="#1f6b3a"/><g fill="#1f6b3a"><ellipse cx="40" cy="55" rx="3.4" ry="2.2" transform="rotate(-15 40 55)"/><ellipse cx="52" cy="50" rx="2.6" ry="1.8"/><ellipse cx="49" cy="63" rx="3" ry="2"/><ellipse cx="61" cy="60" rx="2.4" ry="1.6"/><ellipse cx="35" cy="66" rx="2.2" ry="1.5"/></g><g stroke="#e67e22" stroke-width="3" stroke-linecap="round"><path d="M42 79 L40 90"/><path d="M55 79 L57 90"/></g></g></svg><span>Max <em>Avic</em></span></a>
+            <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+            <nav class="nav" id="menu" aria-label="Menu principal">
+                <a href="index.html" aria-current="page">Accueil</a>
+                <a href="apropos.html">À propos</a>
+                <a href="produits.html">Nos produits</a>
+                <a href="galerie.html">Galerie</a>
+                <a href="contact.html">Contact</a>
+                <a class="btn btn-whatsapp" href="https://wa.me/22997939315?text=Bonjour%20Max%20Avic%2C%20je%20voudrais%20passer%20une%20commande." target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i>Commander</a>
             </nav>
         </div>
     </header>
 
-    <!-- ================= SECTION HERO ================= -->
-    <section class="hero">
-        <div class="hero-content container">
-            <h2>Max Avic, <br>le spécialiste de la caille au Bénin</h2>
-            <p>Découvrez des cailles fermières de qualité, leurs œufs nutritifs, ainsi que des cages et équipements professionnels pour démarrer votre propre élevage.</p>
-            <a href="produits.html" class="btn-primary">Découvrir nos produits</a>
-        </div>
-    </section>
+    <main id="contenu">
 
-    <!-- ================= SECTION AVANTAGES ================= -->
-    <section class="features">
-        <div class="container">
-            <div class="feature-grid">
-                <div class="feature-item">
-                    <i class="fas fa-seedling"></i>
-                    <h3>Alimentation 100% naturelle</h3>
-                    <p>Nos cailles sont nourries exclusivement avec des graines sélectionnées et des compléments sains pour une chair et des œufs de qualité.</p>
+        <!-- ================= HÉROS ================= -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <p class="eyebrow">Élevage de cailles au Bénin</p>
+                    <h1>Le spécialiste de la <em>caille</em>, de la ferme à votre table</h1>
+                    <p class="hero-lead">Œufs frais, viande fermière et cages professionnelles pour lancer votre propre élevage. Tout se commande en un message WhatsApp.</p>
+                    <div class="btn-row">
+                        <a class="btn btn-primary btn-lg" href="produits.html">Découvrir nos produits<i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        <a class="btn btn-outline btn-lg" href="https://wa.me/22997939315?text=Bonjour%20Max%20Avic%2C%20je%20voudrais%20passer%20une%20commande." target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i>Commander</a>
+                    </div>
+                    <ul class="hero-points">
+                        <li><i class="fas fa-seedling" aria-hidden="true"></i>Alimentation saine</li>
+                        <li><i class="fas fa-truck" aria-hidden="true"></i>Livraison possible</li>
+                        <li><i class="fas fa-handshake" aria-hidden="true"></i>Conseils d'élevage</li>
+                    </ul>
                 </div>
-                <div class="feature-item">
-                    <i class="fas fa-home"></i>
-                    <h3>Vente de cages & équipements</h3>
-                    <p>Nous fournissons des cages robustes, des abreuvoirs et des mangeoires adaptés à l'élevage des cailles, pour les petits et grands élevages.</p>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-hand-holding-heart"></i>
-                    <h3>De la ferme à votre table</h3>
-                    <p>Cailles prêtes à cuisiner, œufs frais, ou kits d'élevage. Tout est disponible directement chez Max Avic, sans intermédiaire.</p>
+                <div class="hero-visual">
+                    <div class="hero-photo hero-photo-main"><img src="images/photos/caille-japon.jpg" alt="Caille au plumage tacheté" decoding="async"></div>
+                    <div class="hero-photo hero-photo-side"><img src="images/photos/oeufs-500.jpg" alt="Œufs de caille mouchetés" decoding="async"></div>
+                    <div class="hero-badge hero-badge-1"><span class="badge-icon"><i class="fas fa-egg" aria-hidden="true"></i></span><span><strong>Œufs frais</strong><small>ramassés chaque jour</small></span></div>
+                    <div class="hero-badge hero-badge-2"><span class="badge-icon"><i class="fas fa-warehouse" aria-hidden="true"></i></span><span><strong>Cages galvanisées</strong><small>de 20 à 100 cailles</small></span></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- ================= ENGAGEMENTS ================= -->
+        <section class="trust" aria-label="Nos engagements">
+            <ul class="container">
+                <li><i class="fas fa-seedling" aria-hidden="true"></i><span><strong>Alimentation saine</strong>Graines sélectionnées et compléments sains</span></li>
+                <li><i class="fas fa-broom" aria-hidden="true"></i><span><strong>Cages propres</strong>Bien-être des animaux au quotidien</span></li>
+                <li><i class="fas fa-store" aria-hidden="true"></i><span><strong>Sans intermédiaire</strong>Directement de la ferme</span></li>
+                <li><i class="fas fa-comments" aria-hidden="true"></i><span><strong>Conseils inclus</strong>Pour réussir votre élevage</span></li>
+            </ul>
+        </section>
+
+        <!-- ================= PRODUITS ================= -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head center reveal"><p class="eyebrow">Nos produits</p><h2>Trois façons de profiter de la caille</h2><p>Pour la cuisine, pour la santé, ou pour lancer votre propre activité.</p></div>
+                <div class="products">
+                <article class="product reveal reveal-delay-1" id="oeufs">
+                    <div class="product-media"><img src="images/photos/oeufs-boite-500.jpg" alt="Œufs de caille" loading="lazy" decoding="async"><span class="product-tag">Super-aliment</span></div>
+                    <div class="product-body">
+                        <h3>Œufs de caille</h3>
+                        <p>Petits mais très nutritifs : riches en vitamines A et B12 et en fer. Parfaits pour les enfants, les sportifs, ou en apéritif.</p>
+                        <ul class="product-list"><li><i class="fas fa-check" aria-hidden="true"></i>Frais, ramassés chaque jour</li><li><i class="fas fa-check" aria-hidden="true"></i>Vente en vrac ou par plateau</li><li><i class="fas fa-check" aria-hidden="true"></i>Prix dégressif pour les revendeurs</li></ul>
+                        <div class="product-price"><span><small>Prix</small>Par plateau ou en vrac</span><a class="btn btn-green" href="https://wa.me/22997939315?text=Bonjour%20Max%20Avic%2C%20je%20souhaite%20commander%20%3A%20des%20%C5%93ufs%20de%20caille.%20Pouvez-vous%20me%20donner%20le%20prix%20et%20le%20d%C3%A9lai%20%3F" target="_blank" rel="noopener">Commander</a></div>
+                    </div>
+                </article>
+                <article class="product reveal reveal-delay-2" id="viande">
+                    <div class="product-media"><img src="images/photos/caille-rotie-500.jpg" alt="Viande de caille" loading="lazy" decoding="async"><span class="product-tag">Fermière et tendre</span></div>
+                    <div class="product-body">
+                        <h3>Viande de caille</h3>
+                        <p>Une chair fine et délicate, riche en protéines et peu grasse. Idéale pour les repas de fête comme pour les régimes santé.</p>
+                        <ul class="product-list"><li><i class="fas fa-check" aria-hidden="true"></i>Cailles prêtes à cuisiner</li><li><i class="fas fa-check" aria-hidden="true"></i>À la pièce ou en lot</li><li><i class="fas fa-check" aria-hidden="true"></i>Commandes pour événements</li></ul>
+                        <div class="product-price"><span><small>Prix</small>À la pièce ou en lot</span><a class="btn btn-green" href="https://wa.me/22997939315?text=Bonjour%20Max%20Avic%2C%20je%20souhaite%20commander%20%3A%20de%20la%20viande%20de%20caille.%20Pouvez-vous%20me%20donner%20le%20prix%20et%20le%20d%C3%A9lai%20%3F" target="_blank" rel="noopener">Commander</a></div>
+                    </div>
+                </article>
+                <article class="product reveal reveal-delay-3" id="cages">
+                    <div class="product-media"><svg viewBox="0 0 400 260" role="img" aria-label="Illustration d'une cage d'élevage à étages"><rect width="400" height="260" fill="#f3e7d3"/>
+<g stroke="#8a9a8e" stroke-width="3" fill="none"><rect x="70" y="30" width="260" height="60" rx="4" fill="#fbf6ec"/><line x1="90" y1="30" x2="90" y2="90"/><line x1="110" y1="30" x2="110" y2="90"/><line x1="130" y1="30" x2="130" y2="90"/><line x1="150" y1="30" x2="150" y2="90"/><line x1="170" y1="30" x2="170" y2="90"/><line x1="190" y1="30" x2="190" y2="90"/><line x1="210" y1="30" x2="210" y2="90"/><line x1="230" y1="30" x2="230" y2="90"/><line x1="250" y1="30" x2="250" y2="90"/><line x1="270" y1="30" x2="270" y2="90"/><line x1="290" y1="30" x2="290" y2="90"/><line x1="310" y1="30" x2="310" y2="90"/><rect x="70" y="100" width="260" height="60" rx="4" fill="#fbf6ec"/><line x1="90" y1="100" x2="90" y2="160"/><line x1="110" y1="100" x2="110" y2="160"/><line x1="130" y1="100" x2="130" y2="160"/><line x1="150" y1="100" x2="150" y2="160"/><line x1="170" y1="100" x2="170" y2="160"/><line x1="190" y1="100" x2="190" y2="160"/><line x1="210" y1="100" x2="210" y2="160"/><line x1="230" y1="100" x2="230" y2="160"/><line x1="250" y1="100" x2="250" y2="160"/><line x1="270" y1="100" x2="270" y2="160"/><line x1="290" y1="100" x2="290" y2="160"/><line x1="310" y1="100" x2="310" y2="160"/><rect x="70" y="170" width="260" height="60" rx="4" fill="#fbf6ec"/><line x1="90" y1="170" x2="90" y2="230"/><line x1="110" y1="170" x2="110" y2="230"/><line x1="130" y1="170" x2="130" y2="230"/><line x1="150" y1="170" x2="150" y2="230"/><line x1="170" y1="170" x2="170" y2="230"/><line x1="190" y1="170" x2="190" y2="230"/><line x1="210" y1="170" x2="210" y2="230"/><line x1="230" y1="170" x2="230" y2="230"/><line x1="250" y1="170" x2="250" y2="230"/><line x1="270" y1="170" x2="270" y2="230"/><line x1="290" y1="170" x2="290" y2="230"/><line x1="310" y1="170" x2="310" y2="230"/></g>
+<g fill="#1f6b3a"><rect x="62" y="88" width="276" height="8" rx="3"/><rect x="62" y="158" width="276" height="8" rx="3"/><rect x="62" y="228" width="276" height="8" rx="3"/></g>
+<g fill="#e67e22"><rect x="95" y="78" width="210" height="10" rx="5" opacity=".85"/><rect x="95" y="148" width="210" height="10" rx="5" opacity=".85"/><rect x="95" y="218" width="210" height="10" rx="5" opacity=".85"/></g>
+<g fill="#6b4426"><ellipse cx="120" cy="62" rx="13" ry="10"/><circle cx="130" cy="55" r="6"/><ellipse cx="170" cy="62" rx="13" ry="10"/><circle cx="180" cy="55" r="6"/><ellipse cx="220" cy="62" rx="13" ry="10"/><circle cx="230" cy="55" r="6"/><ellipse cx="270" cy="62" rx="13" ry="10"/><circle cx="280" cy="55" r="6"/><ellipse cx="128" cy="132" rx="13" ry="10"/><circle cx="138" cy="125" r="6"/><ellipse cx="178" cy="132" rx="13" ry="10"/><circle cx="188" cy="125" r="6"/><ellipse cx="228" cy="132" rx="13" ry="10"/><circle cx="238" cy="125" r="6"/><ellipse cx="278" cy="132" rx="13" ry="10"/><circle cx="288" cy="125" r="6"/><ellipse cx="136" cy="202" rx="13" ry="10"/><circle cx="146" cy="195" r="6"/><ellipse cx="186" cy="202" rx="13" ry="10"/><circle cx="196" cy="195" r="6"/><ellipse cx="236" cy="202" rx="13" ry="10"/><circle cx="246" cy="195" r="6"/><ellipse cx="286" cy="202" rx="13" ry="10"/><circle cx="296" cy="195" r="6"/></g>
+<g fill="#1f6b3a"><rect x="66" y="236" width="10" height="20" rx="2"/><rect x="324" y="236" width="10" height="20" rx="2"/></g></svg><span class="product-tag">Matériel professionnel</span></div>
+                    <div class="product-body">
+                        <h3>Cages et kits d'élevage</h3>
+                        <p>Cages en métal galvanisé, robustes et empilables, avec mangeoires, abreuvoirs automatiques et bacs à fientes.</p>
+                        <ul class="product-list"><li><i class="fas fa-check" aria-hidden="true"></i>De 20 à 100 cailles par cage</li><li><i class="fas fa-check" aria-hidden="true"></i>Kits clé en main pour démarrer</li><li><i class="fas fa-check" aria-hidden="true"></i>Conseils pour bien démarrer</li></ul>
+                        <div class="product-price"><span><small>Prix</small>Sur devis, livraison possible</span><a class="btn btn-green" href="https://wa.me/22997939315?text=Bonjour%20Max%20Avic%2C%20je%20souhaite%20commander%20%3A%20une%20cage%20ou%20un%20kit%20d%27%C3%A9levage.%20Pouvez-vous%20me%20donner%20le%20prix%20et%20le%20d%C3%A9lai%20%3F" target="_blank" rel="noopener">Demander un devis</a></div>
+                    </div>
+                </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= POURQUOI LA CAILLE ================= -->
+        <section class="section section-white">
+            <div class="container why">
+                <div class="why-visual reveal">
+                    <img src="images/photos/oeufs-comparaison.jpg" alt="Un œuf de poule à côté de deux œufs de caille" loading="lazy" decoding="async">
+                    <p class="why-note"><strong>Petit, mais costaud</strong>Environ cinq œufs de caille pèsent autant qu'un œuf de poule.</p>
+                </div>
+                <div class="reveal reveal-delay-1">
+                    <p class="eyebrow">Pourquoi la caille ?</p>
+                    <h2 class="section-title">Un oiseau aux multiples vertus, encore méconnu</h2>
+                    <ul class="why-list">
+                        <li><i class="fas fa-heart-pulse" aria-hidden="true"></i><div><strong>Bon pour la santé</strong><p>Des œufs riches en vitamines A et B12 et en fer, une viande riche en protéines et peu grasse.</p></div></li>
+                        <li><i class="fas fa-utensils" aria-hidden="true"></i><div><strong>Fine en cuisine</strong><p>Une chair délicate, très appréciée pour les repas de fête.</p></div></li>
+                        <li><i class="fas fa-chart-line" aria-hidden="true"></i><div><strong>Facile à élever</strong><p>Peu de place, des cages empilables : une activité accessible pour démarrer en aviculture.</p></div></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= COMMANDER ================= -->
+        <section class="section section-sand">
+            <div class="container">
+                <div class="section-head center reveal"><p class="eyebrow">Commander</p><h2>Simple comme un message</h2></div>
+                <ol class="steps">
+                    <li class="step reveal reveal-delay-1"><i class="fas fa-basket-shopping" aria-hidden="true"></i><h3>Choisissez</h3><p>Œufs, viande, cage ou kit complet : dites-nous ce qu'il vous faut et en quelle quantité.</p></li>
+                    <li class="step reveal reveal-delay-2"><i class="fab fa-whatsapp" aria-hidden="true"></i><h3>Écrivez-nous</h3><p>Un bouton « Commander » ouvre WhatsApp avec le message déjà rédigé.</p></li>
+                    <li class="step reveal reveal-delay-3"><i class="fas fa-truck-fast" aria-hidden="true"></i><h3>Recevez</h3><p>Retrait à la ferme ou livraison : nous confirmons le prix et le délai avec vous.</p></li>
+                </ol>
+                <div class="stats reveal">
+                    <div class="stat"><strong data-count="3">3</strong><span>gammes de produits</span></div>
+                    <div class="stat"><strong data-count="100">100</strong><span>cailles par cage, au maximum</span></div>
+                    <div class="stat"><strong data-count="6">6</strong><span>jours sur 7 à votre écoute</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= GALERIE ================= -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head reveal"><p class="eyebrow">En images</p><h2>La caille sous toutes ses formes</h2></div>
+                <div class="strip reveal">
+                    <a href="galerie.html"><img src="images/photos/caille-herbe.jpg" alt="Caille dans l'herbe" loading="lazy" decoding="async"><span>Nos cailles</span></a>
+                    <a href="galerie.html"><img src="images/photos/oeufs-500.jpg" alt="Œufs de caille" loading="lazy" decoding="async"><span>Œufs frais</span></a>
+                    <a href="galerie.html"><img src="images/photos/caillon-500.jpg" alt="Caillon" loading="lazy" decoding="async"><span>Les petits</span></a>
+                    <a href="galerie.html"><img src="images/photos/oeufs-durs-500.jpg" alt="Œufs de caille écalés" loading="lazy" decoding="async"><span>En cuisine</span></a>
+                    <a href="galerie.html"><img src="images/photos/caille-grillee-500.jpg" alt="Cailles grillées" loading="lazy" decoding="async"><span>Recettes</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FAQ ================= -->
+        <section class="section section-white">
+            <div class="narrow">
+                <div class="section-head center reveal"><p class="eyebrow">Questions fréquentes</p><h2>Vous vous demandez…</h2></div>
+                <div class="faq reveal"><details><summary>Comment passer commande ?</summary><p>Le plus simple est WhatsApp : appuyez sur un bouton « Commander », le message est déjà écrit, il suffit de l'envoyer. Vous pouvez aussi appeler ou remplir le formulaire de la page Contact.</p></details><details><summary>Livrez-vous ?</summary><p>Oui, dans plusieurs villes du Bénin. Indiquez votre ville en commandant : nous vous confirmons le délai et le coût de livraison.</p></details><details><summary>Je débute : pouvez-vous m'aider à démarrer un élevage ?</summary><p>Oui. Nous proposons des kits clé en main (cage, mangeoires, abreuvoirs) et nous vous conseillons sur l'installation, l'alimentation et l'entretien.</p></details><details><summary>Combien d'œufs de caille remplacent un œuf de poule ?</summary><p>Environ cinq œufs de caille pèsent autant qu'un œuf de poule.</p></details><details><summary>Peut-on visiter la ferme ?</summary><p>Oui, du lundi au samedi, sur rendez-vous. Écrivez-nous pour fixer un créneau.</p></details></div>
+            </div>
+        </section>
+
+        <!-- ================= APPEL À L'ACTION ================= -->
+        <section class="section">
+            <div class="container">
+                <div class="cta reveal">
+                    <h2>Envie de goûter, ou de vous lancer dans l'élevage ?</h2>
+                    <p>Écrivez-nous sur WhatsApp : nous répondons rapidement, avec les prix et les disponibilités du moment.</p>
+                    <div class="btn-row">
+                        <a class="btn btn-whatsapp btn-lg" href="https://wa.me/22997939315?text=Bonjour%20Max%20Avic%2C%20je%20voudrais%20des%20informations." target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i>Écrire sur WhatsApp</a>
+                        <a class="btn btn-light btn-lg" href="contact.html">Autres moyens de contact</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- ================= PIED DE PAGE ================= -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Max Avic - Tous droits réservés.</p>
-            <div class="socials">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="logo" href="index.html" aria-label="Max Avic, accueil"><svg viewBox="0 0 100 100" aria-hidden="true"><ellipse cx="50" cy="52" rx="38" ry="46" fill="#f6b26b"/><g transform="translate(14 14) scale(.72)"><path d="M25 63 L11 55 L14 66 Z" fill="#123822"/><path d="M20 62 C20 45 35 35 54 36 C59 31 63 26 69 25 C79 24 85 31 84 39 C83 46 79 50 78 56 C77 71 64 80 47 80 C32 80 20 73 20 62 Z" fill="#123822"/><path d="M67 29 C65 17 69 11 75 11 C72 15 71 20 74 29 Z" fill="#123822"/><path d="M84 35 L92 38 L83 41 Z" fill="#e67e22"/><circle cx="76" cy="33" r="2.6" fill="#f6b26b"/><g fill="#f6b26b"><ellipse cx="40" cy="55" rx="3.4" ry="2.2" transform="rotate(-15 40 55)"/><ellipse cx="52" cy="50" rx="2.6" ry="1.8"/><ellipse cx="49" cy="63" rx="3" ry="2"/><ellipse cx="61" cy="60" rx="2.4" ry="1.6"/><ellipse cx="35" cy="66" rx="2.2" ry="1.5"/></g><g stroke="#e67e22" stroke-width="3" stroke-linecap="round"><path d="M42 79 L40 90"/><path d="M55 79 L57 90"/></g></g></svg><span>Max <em>Avic</em></span></a>
+                <p>Élevage de cailles, œufs frais et cages d'élevage au Bénin. De la ferme à votre table, et à votre propre élevage.</p>
+                <div class="socials">
+                    <a href="https://wa.me/22997939315?text=Bonjour%20Max%20Avic%2C%20je%20voudrais%20des%20informations." target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/search/top?q=Max%20Avic" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://www.tiktok.com/search?q=Max%20Avic" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/explore/search/keyword/?q=Max%20Avic" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div>
+                <h2>Le site</h2>
+                <ul><li><a href="index.html">Accueil</a></li><li><a href="apropos.html">À propos</a></li><li><a href="produits.html">Nos produits</a></li><li><a href="galerie.html">Galerie</a></li><li><a href="contact.html">Contact</a></li></ul>
+            </div>
+            <div>
+                <h2>Nos produits</h2>
+                <ul>
+                    <li><a href="produits.html#oeufs">Œufs de caille</a></li>
+                    <li><a href="produits.html#viande">Viande de caille</a></li>
+                    <li><a href="produits.html#cages">Cages et kits d'élevage</a></li>
+                    <li><a href="credits.html">Crédits photos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Nous joindre</h2>
+                <ul>
+                    <li><a href="tel:+22997939315">+229 97 93 93 15</a></li>
+                    <li><a href="mailto:contact@maxavic.bj">contact@maxavic.bj</a></li>
+                    <li>Agblangandan, Sèmè-Podji, Bénin</li>
+                </ul>
             </div>
         </div>
+        <div class="container footer-bottom"><span>© <span data-year>2026</span> Max Avic. Tous droits réservés.</span><span>Fait avec passion au Bénin</span></div>
     </footer>
 
-    <!-- ================= JS MENU MOBILE ================= -->
-    <script>
-        const burger = document.querySelector('.burger');
-        const nav = document.querySelector('.nav-links');
-        burger.addEventListener('click', () => {
-            nav.classList.toggle('nav-active');
-            burger.classList.toggle('toggle');
-        });
-    </script>
+    <a class="wa-float" href="https://wa.me/22997939315?text=Bonjour%20Max%20Avic%2C%20je%20voudrais%20des%20informations." target="_blank" rel="noopener" aria-label="Nous écrire sur WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
